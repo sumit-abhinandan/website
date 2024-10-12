@@ -1,0 +1,280 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9FAFB;
+    color: #2E3A59;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+nav {
+    background-color: #0A58CA;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #F15A29;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #0A58CA;
+    color: white;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #F15A29;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #16C79A;
+}
+
+/* Email Section */
+.email-section {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: #F9FAFB;
+}
+
+.email-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2E3A59;
+}
+
+.email-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+form input[type="email"] {
+    padding: 15px;
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #0A58CA;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #F15A29;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #16C79A;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 80px 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.portfolio h2, .portfolio h3  {
+    font-size: 36px;
+    color: #2E3A59;
+    margin-bottom: 40px;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.portfolio-item {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.portfolio-item iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #0A58CA;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover  iframe {
+    transform: scale(1.05);
+}
+
+.portfolio-item h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #0A58CA;
+}
+
+/* About Us Section */
+.about {
+    padding: 80px 50px;
+    background-color: #F9FAFB;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #2E3A59;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #2E3A59;
+    margin-bottom: 40px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 250px;
+    margin-bottom: 40px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #0A58CA;
+}
+
+.team-member h4 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #F15A29;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #2E3A59;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #2E3A59;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 400px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #0A58CA;
+    font-size: 16px;
+}
+
+.contact form button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #F15A29;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #16C79A;
+}
+
+/* Footer */
+footer {
+    background-color: #0A58CA;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+}
